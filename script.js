@@ -1,7 +1,8 @@
 // Size of Grid
 const slider = document.querySelector('.slider');
 const value = document.querySelector('.value');
-const colorWheel = document.querySelector('.colorWheel')
+const colorWheel = document.querySelector('.colorWheel');
+const clearButton = document.querySelector('.clearButton');
 
 value.textContent = `${slider.value} x ${slider.value}`;
 
@@ -25,8 +26,9 @@ function createBoard(size){
         board.insertAdjacentElement('beforeend', square);
     }
 }
+
+clearButton.onclick = function(){
+    location.reload();
+}
+
 createBoard(16);
-
-// Color mode
-
-// Rainbow mode
