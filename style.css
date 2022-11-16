@@ -32,3 +32,32 @@ html, body{
     gap: 40px;
     margin-top: 20px;
 }
+.clearButton{
+    border: 2px solid black;
+    width: 90px;
+    height: 30px;
+
+}
+.clearButtonText{
+    font-family: sans-serif, 'Calibri', 'Arial';   
+    font-size: 20px;
+    margin: 0;
+}
+.value{
+    font-family: sans-serif, 'Calibri', 'Arial';   
+    font-size: 20px;
+    margin-left: 10px;
+}
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+	width: 50px;
+	height: 30px;
+    border: 2px solid black;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
