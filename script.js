@@ -1,5 +1,7 @@
+// Size of Grid
 const slider = document.querySelector('.slider');
 const value = document.querySelector('.value');
+const colorWheel = document.querySelector('.colorWheel')
 
 value.textContent = `${slider.value} x ${slider.value}`;
 
@@ -17,8 +19,14 @@ function createBoard(size){
 
     for(let i = 0; i < area; i++){
         let square = document.createElement('div');
-        square.style.cssText = 'background: blue';
+        square.onmouseover = function(){
+            square.style.cssText = `background: ${colorWheel.value}`;
+        }
         board.insertAdjacentElement('beforeend', square);
     }
 }
 createBoard(16);
+
+// Color mode
+
+// Rainbow mode
