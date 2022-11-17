@@ -3,6 +3,7 @@ const slider = document.querySelector('.slider');
 const value = document.querySelector('.value');
 const colorWheel = document.querySelector('.colorWheel');
 const clearButton = document.querySelector('.clearButton');
+const board = document.querySelector('.board');
 
 value.textContent = `${slider.value} x ${slider.value}`;
 
@@ -12,7 +13,6 @@ slider.oninput = function(){
 }
 
 function createBoard(size){
-    let board = document.querySelector('.board');
     let squares = board.querySelectorAll('div');
     squares.forEach((div) => div.remove());
     board.style.gridTemplate = `repeat(${size}, 1fr) / repeat(${size}, 1fr)`;
@@ -27,8 +27,9 @@ function createBoard(size){
     }
 }
 
-clearButton.onclick = function(){
-    location.reload();
+clearButton.onclick = function () {
+    var gridPixels = board.querySelectorAll('div');
+    gridPixels.forEach(gridPixel => gridPixel.style.backgroundColor = '#ffffff');
 }
 
 createBoard(16);
