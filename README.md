@@ -6,6 +6,10 @@ https://kepplin.github.io/odin-etchasketch/
 
 ![demoetch](https://user-images.githubusercontent.com/107027281/211229422-e5e030a3-e187-4e65-bcd0-21aa649d0a68.png)
 
+## About
+
+This was a project for [The Odin Project](https://www.theodinproject.com/lessons/foundations-etch-a-sketch). It was fun to make though I was frustrated because it felt like the only way to make this was to use CSS grid, which at that point in the project, we had not learned about. However this doubled as an opportunity for me to learn more and get ahead.
+
 ## Instructions
 
 - Hover over drawing panel to draw.
